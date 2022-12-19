@@ -9,6 +9,7 @@ public class Challange_3 {
         System.out.println("Median value is: " + findaMedian(arr, size));
         System.out.println("Max value is: " + findaMax(arr, size));
         System.out.println("Mode value is: " + findMode(arr, size));
+        findPrimeNum(arr, size);
 
     }
 
@@ -53,6 +54,28 @@ public class Challange_3 {
         }
 
         return maxVal;
+    }
+
+    static void findPrimeNum(int arr[], int size) {
+
+        int status = 0;
+
+        System.out.print("List of Prime Numbers: ");
+
+        for (int i = 0; i < arr.length; i++) {
+            status = 0;
+            for (int j = 2; j < arr[i] / 2; j++) {
+                if (arr[i] % j == 0) {
+                    status = 1;
+                    break;
+                }
+            }
+
+            if (status == 0) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+
     }
 
 }
