@@ -6,8 +6,8 @@ public class Challange_3 {
         int arr[] = { 47, 84, 75, 21, 14, 14, 79 };
 
         //System.out.println("Median value is: " + findaMedian(arr, size));
-        System.out.println("Max value is: " + findaMax(arr, size));
-        //System.out.println("Mode value is: " + findMode(arr, size));
+        //System.out.println("Max value is: " + findaMax(arr, size));
+        System.out.println("Mode value is: " + findMode(arr, size));
 
     }
 
