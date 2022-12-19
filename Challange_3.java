@@ -2,9 +2,10 @@ public class Challange_3 {
 
     public static void main(String[] args) {
 
-        int size = 7;
-        int arr[] = { 47, 84, 75, 21, 14, 14, 79 };
+        int size = 7; // initialize array size
+        int arr[] = { 47, 84, 75, 21, 14, 14, 79 }; // initialize array
 
+        // print funtions
         System.out.println("Median value is: " + findaMedian(arr, size));
         System.out.println("Max value is: " + findaMax(arr, size));
         System.out.println("Mode value is: " + findMode(arr, size));
@@ -15,17 +16,17 @@ public class Challange_3 {
 
         int median = 0;
 
-        median = arr[size / 2];
+        median = arr[size / 2]; // divide array size by two and get index
 
         return median;
     }
 
     static int findaMax(int arr[], int size) {
 
-        int max = arr[0];
+        int max = arr[0]; // assing 0th index as max value
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
+            if (arr[i] > max) { // check the max value is grater than to other index in array
                 max = arr[i];
             }
         }
@@ -41,13 +42,13 @@ public class Challange_3 {
             count = 0;
             for (int j = 0; j < arr.length; j++) {
                 if (arr[j] == arr[i]) {
-                    count++;
+                    count++; // get count of same values in array
                 }
             }
 
-            if (count > maxCount) {
-                maxCount = count;
-                maxVal = arr[i];
+            if (count > maxCount) { // if count is grater than max count
+                maxCount = count; // get max count
+                maxVal = arr[i]; // return max value array index
             }
         }
 
