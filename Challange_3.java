@@ -56,7 +56,7 @@ public class Challange_3 {
         return maxVal;
     }
 
-    static void findPrimeNum(int arr[], int size) {
+    static void findPrimeNum(int arr[], int size) { //find prime number
 
         int status = 0;
 
@@ -64,8 +64,8 @@ public class Challange_3 {
 
         for (int i = 0; i < arr.length; i++) {
             status = 0;
-            for (int j = 2; j < arr[i] / 2; j++) {
-                if (arr[i] % j == 0) {
+            for (int j = 2; j < arr[i] / 2; j++) { 
+                if (arr[i] % j == 0) { //check if i % j == 0
                     status = 1;
                     break;
                 }
